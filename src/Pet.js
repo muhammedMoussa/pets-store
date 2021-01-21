@@ -1,9 +1,11 @@
 export default class Pet {
     constructor(name) {
         this.name = name;
+        this.platoon = platoon;
+        this.price = price;
     }
 
-    sayHi() {
-        return this.name;
-    }
+    getFamilyInfo() { }
+    getPriceInfo() {}
+    getDetails() {}
 }
