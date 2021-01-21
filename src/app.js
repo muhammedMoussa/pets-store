@@ -11,11 +11,18 @@ const mackerel = new Fish('Mackerel', 150);
 const adamInvoice = new Purchase('Adam', [bitpull, perch]);
 const jhonInvoice = new Purchase('Jhon', [mackerel, husky]);
 
+const reportDiv = document.querySelector('.report');
+
 const invoices = [
     adamInvoice,
     jhonInvoice
 ];
 
 invoices.map(invoice => {
+    const pTag = document.createElement("p");
+    const pTagContent = document.createTextNode(invoice.sell());
+    pTag.appendChild(pTagContent);
+
+    reportDiv.appendChild(pTag)
     console.log(invoice.sell());
 })

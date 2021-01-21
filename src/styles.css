@@ -1,4 +1,13 @@
 h1 {
     color: hotpink;
     font-family: cursive;
-  }
+}
+
+.report {
+  border: thin solid rebeccapurple;
+  padding: 20px;
+}
+
+p {
+  border-bottom: thin solid grey;
+}
