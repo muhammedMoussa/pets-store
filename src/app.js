@@ -1,6 +1,6 @@
-import Fish from './Fish';
-import Puppie from './Puppie';
-import Purchase from './Purchase';
+import Fish from './app/Fish';
+import Puppie from './app/Puppie';
+import Purchase from './app/Purchase';
 
 const bitpull = new Puppie('Bitpull', 2500);
 const husky   = new Puppie('Husky', 3700);

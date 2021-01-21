@@ -1,11 +1,11 @@
-import Pet from './Pet';
-jest.mock('./Pet'); 
+import Pet from '../app/Pet';
+jest.mock('../app/Pet'); 
 
 beforeEach(() => {
   Pet.mockClear();
 });
 
-it('We can check if the consumer called the class constructor', () => {
+it('We can check if the consumear called the class constructor', () => {
     const mockSayHi = jest.fn();
     Pet.prototype.sayHi = mockSayHi
 
