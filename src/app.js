@@ -1,5 +1,21 @@
-import Pet from './Pet';
+import Fish from './Fish';
 import Puppie from './Puppie';
+import Purchase from './Purchase';
 
-const dog = new Puppie('Bitpull', '', 1);
-console.log(dog.getDetails());
+const bitpull = new Puppie('Bitpull', 2500);
+const husky   = new Puppie('Husky', 3700);
+
+const perch = new Fish('Perch', 220);
+const mackerel = new Fish('Mackerel', 150);
+
+const adamInvoice = new Purchase('Adam', [bitpull, perch]);
+const jhonInvoice = new Purchase('Jhon', [mackerel, husky]);
+
+const invoices = [
+    adamInvoice,
+    jhonInvoice
+];
+
+invoices.map(invoice => {
+    console.log(invoice.sell());
+})

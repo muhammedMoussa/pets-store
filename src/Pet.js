@@ -1,7 +1,7 @@
 export default class Pet {
-    constructor(name) {
+    platoon;
+    constructor(name, price) {
         this.name = name;
-        this.platoon = platoon;
         this.price = price;
     }
 

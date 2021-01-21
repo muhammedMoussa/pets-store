@@ -1,9 +1,9 @@
 import Pet from "./Pet";
 
-export default class Puppie extends Pet {
+export default class Fish extends Pet {
     constructor(name, price) {
-        super(name, 'Puppies', price);
-        this.name = `${name} Dog`;
+        super(name, 'Fishs', price);
+        this.name = `${name} Fish`;
         this.price = price;
     }
 
