@@ -1,13 +1,20 @@
 h1 {
     color: hotpink;
     font-family: cursive;
+    text-align: center;
 }
 
-.report {
+.report, form {
   border: thin solid rebeccapurple;
   padding: 20px;
+  margin: 10px auto;
+  width: 700px;
 }
 
 p {
   border-bottom: thin solid grey;
+}
+
+input {
+  margin: 10px 5px;
 }
